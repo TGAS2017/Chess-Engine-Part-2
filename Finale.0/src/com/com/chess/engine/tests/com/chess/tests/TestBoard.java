@@ -24,8 +24,7 @@ public class TestBoard {
         assertTrue(board.currentPlayer().isKingSideCastleCapable());
         assertTrue(board.currentPlayer().isQueenSideCastleCapable());
         assertEquals(board.currentPlayer(), board.whitePlayer());
-        assertEquals(board.currentPlayer().getOpponent(), board.blackPlayer());//do I either this return to white player, change the signature or create method assert equals
-        assertFalse(board.currentPlayer().getOpponent().isInCheck());
+        assertEquals(board.currentPlayer().getOpponent(), board.blackPlayer());
         assertFalse(board.currentPlayer().getOpponent().isInCheckMate());
         assertFalse(board.currentPlayer().getOpponent().isCastled());
         assertTrue(board.currentPlayer().getOpponent().isKingSideCastleCapable());
@@ -46,7 +45,7 @@ public class TestBoard {
         assertFalse(BoardUtils.isEndGame(board));
         assertFalse(BoardUtils.isThreatenedBoardImmediate(board));
         assertEquals(StandardBoardEvaluator.get().evaluate(board, 0), 0);
-        assertEquals(board.getPiece(35), null);
+        assertEquals(board.getPiece(35), null);//cannot resolve null in this method
     }
 
     private void assertEquals(Player currentPlayer, WhitePlayer whitePlayer) {
