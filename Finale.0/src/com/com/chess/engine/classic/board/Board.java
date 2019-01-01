@@ -7,7 +7,7 @@ import com.com.chess.engine.classic.player.Player;
 import com.com.chess.engine.classic.player.WhitePlayer;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterables;
-import it.unimi.dsi.fastutil.ints.Int2ObjectMap;//
+import it.unimi.dsi.fastutil.ints.Int2ObjectMap;//Confused on this type of import along with the other Int2ObjectMap with the // next to them
 import it.unimi.dsi.fastutil.ints.Int2ObjectMaps;//
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;//
 
